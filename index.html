@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Test</title>
+</head>
+<body>
+    <form class="free"  action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Wikimedia-logo.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="new_div"></div>
+      
+        <div class="container">
+          <label for="uname" ><b>Username</b></label>
+          <input type="text" class="name" placeholder="Enter Username" name="uname" required>
+
+          
+      
+          <label for="psw" ><b>Password</b></label>
+          <input type="password" class="pass" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" click="onSubmit()" class="logss">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn" click="addMsg" >Cancel</button>
+          <button type="button" class="cancelbtn" >Retry</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+<!--
+      <ul class="list">
+        <li onclick="play()"> item 1</li>
+        <li> item 2</li>
+        <li> item 3</li>
+
+      </ul>
+    -->
+
+      <script src="main.js"></script>
+</body>
+</html>
