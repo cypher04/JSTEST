@@ -73,3 +73,17 @@ form {
     background-color: grey;
     text-decoration: none;
   }
+
+  .new_div {
+    color: #f44336;
+    padding: 5px;
+    margin-left: 15px;
+    width: 200px;
+  }
+
+  .new_div2 {
+    color: #04AA6D;
+    padding: 5px;
+    margin-left: 15px;
+    width: 200px;
+  }

@@ -37,6 +37,35 @@ const nae = document.querySelector('.name');
 const pass = document.querySelector('.pass');
 const free = document.querySelector('.free');
 const canclebtn = document.querySelector('.canclebtn');
+let first_div = document.querySelector(".new_div");
+let second_div = document.querySelector(".new_div2");
+//const ndiv = document.querySelector('.new_div');
+
+
+
+
+logr.addEventListener('click', onSubmit);
+
+function onSubmit(e){
+e.preventDefault();
+
+    if (nae.value === '') {
+        
+        first_div.innerHTML = 'Please Enter Your Name';
+        
+        setTimeout(() => first_div.remove(), 1000);
+    }
+    else if (pass.value === ""){
+
+        first_div.innerHTML = 'Please Enter Your Password';
+
+        setTimeout(() => first_div.remove(), 1000); // this sets the timeout for the error message
+    }
+    else{
+        second_div.innerHTML = `Welcome on board ${nae.value} Please proceed to the next step `;
+    }
+};
+
 
 
 /*
@@ -52,32 +81,30 @@ function sayHello(){
 
 // Events in Javascript
 */
-logr.addEventListener('click', onSubmit);
 
-function onSubmit(){
 
-    if (nae.value === '') {
-        alert('please enter name');
-    }
-    else if (pass.value === ""){
-        alert('enter password');
-    }
-    else{
-        alert('success');
-    }
 
-const para = 
 
-    document.free.inner
+
 
     
+
+   /* let final = first_div.appendChild("shoo");
+    document.first_div.innerHTML = final; 
+
+//const para = document.free.inner
+
+    //console.log();*/
+
+
+/*canclebtn.addEventListener('click', addMsg); 
+
+function addMsg(){
+
     
-    //console.log();
-};
+};*/
 
-canclebtn.addEventListener('click', addMsg);
-
-function addMsg(e){
+/*function addMsg(e){
     const first_div = document.createElement('div');
 
     const txtt = document.createTextNode(`Welcome ${nae.value} to this platform`);
@@ -87,7 +114,7 @@ function addMsg(e){
     //const nave = document.getElementsByClassName('new_div');
 
     document.free.appendChild(final);
-};
+};*/
 
   
 
