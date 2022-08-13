@@ -64,6 +64,12 @@ e.preventDefault();
     else{
         second_div.innerHTML = `Welcome on board ${nae.value} Please proceed to the next step `;
     }
+
+// Code To clear the input field after being filled
+
+nae.value = '';
+pass.value = '';
+
 };
 
 
